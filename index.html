@@ -15,9 +15,19 @@
   </head>
 
   <body>
-   <video autoplay muted loop id="bg-video">
-   <source src="anime-wallpaper-2 (1).mp4" type="video/mp4">
-
+   
+    <script>
+      function updateTime() {
+      var currentTime = new Date().toLocaleString();
+      var timeText = document.querySelector("#timeElement");
+      timeText.innerHTML = currentTime
+      }
+      setInterval(updateTime, 1000);
+    </script>
+   
+   
+    <video autoplay muted loop id="bg-video">
+    <source src="anime-wallpaper-2 (1).mp4" type="video/mp4">
    </video>
 
     
@@ -86,10 +96,9 @@
       KangOS
     </p>
 
-    <p style="
-    margin-right: 12px;
-    ">
-      03/07/2026 3:41 PM
+    <p id="timeElement"
+     
+    style="margin-right: 12px;">
     </p>
 
     </div>
