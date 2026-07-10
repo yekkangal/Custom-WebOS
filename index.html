@@ -15,22 +15,12 @@
   </head>
 
   <body>
-   
-    <script>
+   <video autoplay muted loop id="bg-video">
+   <source src="anime-wallpaper-2 (1).mp4" type="video/mp4">
 
-      function updateTime() {
-      var currentTime = new Date().toLocaleDateString();
-      var timeText = document.querySelector("#timeElement")
-      timeText.innerHTML = currentTime
-      }
-    setInterval(updateTime, 1);
-    </script>
-   
-   
-    <video autoplay muted loop id="bg-video">
-    <source src="anime-wallpaper-2 (1).mp4" type="video/mp4">
    </video>
 
+    
     <div style="
       width: 264px;
       position: absolute; top: 50%; left: 50%;
@@ -57,7 +47,7 @@
      width="240px";
      height="135px";
 
-     src="wmremove-transformed.png" alt="CoreOS Logo"
+     src="wmremove-transformed.png" alt="KangOS Logo"
        ">
 
 
@@ -86,6 +76,8 @@
 
     <img style="
     border-radius: 12px;"
+    width="24px"
+    height="24px"
     src="taskbar-logo.png" alt="KangOS Taskbar Logo">
 
     <p style="
@@ -94,11 +86,10 @@
       KangOS
     </p>
 
-    <p id="timeElement"
-    style="
+    <p style="
     margin-right: 12px;
     ">
-      Time
+      03/07/2026 3:41 PM
     </p>
 
     </div>
