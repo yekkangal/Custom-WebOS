@@ -44,8 +44,12 @@
      margin: 0;
      padding: 0;
      z-index: 10;
-  " >
+   ">
     </div>
+
+    <p style="cursor: pointer" id="welcomeClose">
+      Close
+    </p>
 
       <!-- Content Here -->
        <h1 style="
@@ -69,14 +73,15 @@
 
     <div style="
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    backdrop-filter: blur(13px);
+    backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.25);
     color: azure;
     width: 60%;
+    height: 36px;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -93,8 +98,8 @@
     src="taskbar-logo.png" alt="KangOS Taskbar Logo">
 
     <p style="
-    margin-left: 12px;
-    ">
+    margin-left: 12px;"
+    id="welcomeOpen">
       KangOS
     </p>
 
