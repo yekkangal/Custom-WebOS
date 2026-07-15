@@ -16,25 +16,37 @@
 
   <body>
    
-    <script src="script.js" > </script>
-   
-   
     <video autoplay muted loop id="bg-video">
     <source src="anime-wallpaper-2 (1).mp4" type="video/mp4">
    </video>
 
     
-    <div style="
+    <div id="welcome-window" style="
       width: 264px;
       position: absolute; top: 50%; left: 50%;
       transform: translate(-50%, -50%);
       padding: 20px;
       border: 8px solid;
+      border-top-width: 12px;
       border-radius: 16px;
       border-color: #00FFFF;
       background-color: rgba(203, 226, 254, 0.5);
       backdrop-filter: blur(10px);
     ">
+
+    <div id="welcome-windowheader"  style="
+     width: 100%;
+     height: 12px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     cursor: grab;
+     margin: 0;
+     padding: 0;
+     z-index: 10;
+  " >
+    </div>
+
       <!-- Content Here -->
        <h1 style="
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
@@ -52,9 +64,6 @@
 
      src="wmremove-transformed.png" alt="KangOS Logo"
        ">
-
-
-
 
     </div>
 
@@ -95,6 +104,8 @@
     </p>
 
     </div>
+
+      <script src="script.js" > </script>
 
   </body>
 
