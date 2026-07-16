@@ -63,7 +63,8 @@ var welcomeScreen = document.querySelector("#welcome-window")
   }
 
  function openWindow(element) {
-  element.style.display = "flex"
+  element.style.display = "flex";
+  element.style.flexDirection = "column";
  }
 
  var welcomeScreenClose = document.querySelector("#welcomeClose")
