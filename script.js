@@ -58,22 +58,22 @@ function updateTime() {
 
 var welcomeScreen = document.querySelector("#welcome-window")
  
- function closeWindow(element) {
-   element.style.display = "none"
- }
+  function closeWindow(element) {
+    element.style.display = "none"
+  }
 
  function openWindow(element) {
   element.style.display = "flex"
  }
 
- var welcomeScreenClose = document.querySelector("#welcomeclose")
+ var welcomeScreenClose = document.querySelector("#welcomeClose")
 
- var welcomeScreenOpen = document.querySelector("#welcomeopen")
+ var welcomeScreenOpen = document.querySelector("#welcomeOpen")
 
  welcomeScreenClose.addEventListener("click", function() {
   closeWindow(welcomeScreen);
  });
 
- welcomeScreenClose.addEventListener("click", function() {
+ welcomeScreenOpen.addEventListener("click", function() {
   openWindow(welcomeScreen);
  });
