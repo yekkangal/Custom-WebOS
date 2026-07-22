@@ -16,7 +16,7 @@
 
   <body  style="
   overflow: hidden;
-  margi: 0;
+  margin: 0;
   ">
    
     <video autoplay muted loop id="bg-video">
@@ -32,7 +32,7 @@
       border: 8px solid;
       border-top-width: 16px;
       border-radius: 16px;
-      border-color: #00FFFF;
+      border-color: rgba(0, 255, 255, 0.6);
       background-color: rgba(203, 226, 254, 0.5);
       backdrop-filter: blur(10px);
     ">
@@ -50,7 +50,15 @@
    ">
     </div>
 
-    <p style="cursor: pointer" id="welcomeClose">Close</p>
+    <img src="close_button-removebg-preview.png" alt="close-button"
+    id="welcomeClose"
+    style="cursor: pointer;
+    position: absolute;
+    top: -12px;
+    left: 264px;
+    width: 8px;
+    height: 8px;
+    ">
 
       <!-- Content Here -->
        <h1 style="
