@@ -34,7 +34,7 @@
     z-index: 100;
 }
 
-.KangOS-logo {
+.KangOS-mainlogo {
     border-radius: 16px;
     object-fit: cover;
     width: 240px;
@@ -61,7 +61,7 @@
     z-index: 10000;
 }
 
-.logo-Bottombar {
+.KangOSlogo-Bottombar {
     border-radius: 12px;
     height: 24px;
     width: 24px;

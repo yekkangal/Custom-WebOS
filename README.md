@@ -1,1 +1,2 @@
-# Custom-WebOS
+# KangOS
+KangOS is a summer project of mine which I started coding to learn the basics of .html and .css. You can go check out the link if you want to see the website. https://yekkangal.github.io/Custom-WebOS/
