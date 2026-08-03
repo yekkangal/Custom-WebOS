@@ -24,45 +24,17 @@
     <source src="anime-wallpaper-2 (1).mp4" type="video/mp4">
    </video>
 
-    
-    <div id="welcome-window" style="
-      width: 264px;
-      position: absolute; top: 50%; left: 50%;
-      transform: translate(-50%, -50%);
-      padding: 20px;
-      border: 8px solid;
-      border-top-width: 16px;
-      border-radius: 16px;
-      border-color: rgba(0, 255, 255, 0.6);
-      background-color: rgba(203, 226, 254, 0.5);
-      backdrop-filter: blur(10px);
-    ">
+<!-- Welcome Window Start --> 
 
-    <div class="closebutton" id="welcome-windowheader"  style="
-     width: 100%;
-     height: 16px;
-     position: absolute;
-     top: -16px;
-     left: 0;
-     cursor: grab;
-     margin: 0;
-     padding: 0;
-     z-index: 10;
-   ">
-    </div>
+    <div class="welcome-window" id="welcome-window">
+
+    <div class="drag-windowheader" id="welcome-windowheader"> </div>
 
     <img src="close_button-removebg-preview.png" alt="close-button"
-    id="welcomeClose"
-    style="cursor: pointer;
-    position: absolute;
-    top: -12px;
-    right: 2px;
-    width: 12px;
-    height: 12px;
-    z-index: 100;
-    ">
+    class="close-button"  id="welcomeClose">
 
-      <!-- Content Here -->
+<!-- Welcome Window Content -->
+       
        <h1 style="
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
        ">
@@ -71,36 +43,13 @@
 
       <p>KangOS is an integrated web-based platform for seamless daily task management.</p>
 
-       <img style="
-     border-radius: 16px;
-     object-fit: cover;"
-     width="240px";
-     height="135px";
+       <img src="wmremove-transformed.png" alt="KangOS Logo" id="KangOS-logo" class="KangOS-logo">
 
-     src="wmremove-transformed.png" alt="KangOS Logo"
-       ">
+    </div> 
+<!-- Welcome Window End -->
 
-    </div>
-
-    <div style="
-    position: absolute;
-    bottom: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.25);
-    color: azure;
-    width: 60%;
-    height: 36px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    border: 1px solid;
-    border-color: rgba(255, 255, 255, 0.35);
-    border-radius: 12px;
-    z-index: 10000;
-    ">
+<!-- Bottom Bar Start -->
+    <div class="bottom-bar" id="bottom-bar">
 
     <img style="
     border-radius: 12px;
@@ -122,6 +71,7 @@
     </p>
 
     </div>
+<!-- Bottom Bar End -->
 
       <script src="script.js" > </script>
 
