@@ -75,13 +75,19 @@
 }
 
 .desktop-App1 {
-    padding-top: 64px;
-    padding-left: 16px;
+.desktop-App1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 8px;
     text-align: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     width: fit-content;
+    cursor: pointer;
+    border-radius: 8px;
+}
 }
 
 .app1-Logo {
