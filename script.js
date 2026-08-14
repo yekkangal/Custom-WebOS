@@ -122,7 +122,7 @@ document.addEventListener("click", function() {
 
 dragElement(document.querySelector("#Notes-App"));
 
-var notesScreen = document.querySelector("#Notes-App")
+var notesScreen = document.querySelector("#Desktop-App1")
 
 var notesScreenClose = document.querySelector("#NotesClose")
 
