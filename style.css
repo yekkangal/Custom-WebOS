@@ -84,7 +84,6 @@
     align-items: center; 
     text-align: center;
     width: 80px; 
-    cursor: pointer;
     border-radius: 8px;
 }
 
@@ -98,4 +97,18 @@
 .selected-desktop-App1 {
     background-color: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.Notes-Window {
+      width: 720px;
+      height: 405px;
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      border: 8px solid;
+      border-top-width: 16px;
+      border-radius: 24px;
+      border-color: rgba(0, 167, 167, 0.6);
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
 }

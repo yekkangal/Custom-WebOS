@@ -94,8 +94,7 @@ function deselectIcon(element) {
 function handleIconTap(element) {
   if (element.classList.contains("selected-desktop-App1")) {
     deselectIcon(element);
-    // Eğer Notes uygulaması açılacaksa doğru pencere değişkenini buraya yazmalısın:
-    // openWindow(welcomeScreen); 
+    openWindow(window)
   } else {
     // Eğer önceden seçili başka bir ikon varsa onun seçimini kaldırabilirsin
     if (selectedIcon) {
@@ -120,3 +119,11 @@ document.addEventListener("click", function() {
         deselectIcon(selectedIcon);
     }
 });
+
+dragElement(document.querySelector("#Notes-App"));
+
+var notesScreen = document.querySelector("#Notes-App")
+
+var notesScreenClose = document.querySelector("#NotesClose")
+
+notesScreenClose.addEventListener("click", () => closeWindow(notesScreen));
