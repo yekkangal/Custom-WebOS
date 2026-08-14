@@ -78,3 +78,45 @@ var welcomeScreen = document.querySelector("#welcome-window")
  welcomeScreenOpen.addEventListener("click", function() {
   openWindow(welcomeScreen);
  });
+
+var selectedIcon = undefined;
+
+function selectIcon(element) {
+    element.classList.add("selected-desktop-App1");
+    selectedIcon = element;
+}
+
+function deselectIcon(element) {
+    element.classList.remove("selected-desktop-App1");
+    selectedIcon = undefined;
+}
+
+function handleIconTap(element) {
+  if (element.classList.contains("selected-desktop-App1")) {
+    deselectIcon(element);
+    // Eğer Notes uygulaması açılacaksa doğru pencere değişkenini buraya yazmalısın:
+    // openWindow(welcomeScreen); 
+  } else {
+    // Eğer önceden seçili başka bir ikon varsa onun seçimini kaldırabilirsin
+    if (selectedIcon) {
+        deselectIcon(selectedIcon);
+    }
+    selectIcon(element);
+  }
+}
+
+// İkonu JavaScript ile bulup tıklama olayını bağlıyoruz:
+var desktopApp1 = document.querySelector("#desktop-App");
+
+desktopApp1.addEventListener("click", function(e) {
+    // Sayfanın başka bir yerinden tıklama kabarcıklanmasını engellemek için
+    e.stopPropagation(); 
+    handleIconTap(desktopApp1);
+});
+
+// Masaüstünde boş bir yere tıklandığında seçimi kaldırmak için:
+document.addEventListener("click", function() {
+    if (selectedIcon) {
+        deselectIcon(selectedIcon);
+    }
+});
