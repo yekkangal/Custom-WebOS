@@ -120,10 +120,31 @@ document.addEventListener("click", function() {
     }
 });
 
-dragElement(document.querySelector("#Notes-App"));
+dragElement(document.querySelector("#desktop-App"));
 
-var notesScreen = document.querySelector("#desktop-App")
+var notesScreen = document.querySelector("#Notes-App")
 
 var notesScreenClose = document.querySelector("#NotesClose")
 
 notesScreenClose.addEventListener("click", () => closeWindow(notesScreen));
+
+ var biggestIndex = 15;
+ function addWindowTapHandling(element) {
+  element.addEventListener("mousedown",  () =>
+  handleWindowTap(element)
+ )
+  }
+
+  addWindowTapHandling(notesScreen)
+  addWindowTapHandling(welcomeScreen)
+
+ function handleWindowTap(element) {
+  biggestIndex++;
+  element.style.zIndex = biggestIndex;
+ }
+
+ function openWindow(element) {
+  element.style.display = "flex";
+  biggestIndex++;  // Increment biggestIndex by 1
+  element.style.zIndex = biggestIndex;
+ }
