@@ -62,11 +62,6 @@ var welcomeScreen = document.querySelector("#welcome-window")
     element.style.display = "none"
   }
 
- function openWindow(element) {
-  element.style.display = "flex";
-  element.style.flexDirection = "column";
- }
-
  var welcomeScreenClose = document.querySelector("#welcomeClose")
 
  var welcomeScreenOpen = document.querySelector("#welcomeOpen")
@@ -94,9 +89,8 @@ function deselectIcon(element) {
 function handleIconTap(element) {
   if (element.classList.contains("selected-desktop-App1")) {
     deselectIcon(element);
-    openWindow(window)
+    openWindow(notesScreen);
   } else {
-    // Eğer önceden seçili başka bir ikon varsa onun seçimini kaldırabilirsin
     if (selectedIcon) {
         deselectIcon(selectedIcon);
     }
@@ -145,6 +139,7 @@ notesScreenClose.addEventListener("click", () => closeWindow(notesScreen));
 
  function openWindow(element) {
   element.style.display = "flex";
+  element.style.flexDirection = "column";
   biggestIndex++;  // Increment biggestIndex by 1
   element.style.zIndex = biggestIndex;
  }
